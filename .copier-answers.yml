@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.4.0
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: mridul.seth@ess.eu
+author_name: Mridul Seth
+has_binder: false
+has_settings: false
+kind: frontend-and-server
+labextension_name: jupyterlab-ess
+project_short_description: A JupyterLab extension for European Spallation Source VISA
+    instance.
+python_name: jupyterlab_ess
+repository: https://github.com/scipp/jupyterlab-ess
+test: true
+
