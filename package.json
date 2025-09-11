@@ -108,7 +108,13 @@
             }
         },
         "extension": true,
-        "outputDir": "jupyterlab_ess/labextension"
+        "outputDir": "jupyterlab_ess/labextension",
+        "disabledExtensions": [
+            "@jupyterlab/console-extension",
+            "@jupyterlab/debugger-extension:consoles",
+            "@jupyterlab/tooltip-extension:consoles",
+            "@jupyterlab/inspector-extension:consoles"
+        ]
     },
     "eslintIgnore": [
         "node_modules",

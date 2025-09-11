@@ -3,3 +3,10 @@
 
     https://jupyterlab.readthedocs.io/en/stable/developer/css.html
 */
+
+.jp-Launcher-body {
+  background-image: url('https://ess.eu/themes/custom/ess/logo.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 250px;
+}
