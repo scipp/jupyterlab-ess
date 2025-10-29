@@ -57,18 +57,18 @@ const myIcon = new LabIcon({
 });
 
 const plugin: JupyterFrontEndPlugin<void> = {
-id: 'ESS:plugin',
-description: 'Add a left panel widget with some links to ESS resources.',
-autoStart: true,
-requires: [ICommandPalette],
-activate: (app: JupyterFrontEnd, palette: ICommandPalette) => {
-  console.log('JupyterLab extension ESS is activated!');
+  id: 'ESS:plugin',
+  description: 'Add a left panel widget with some links to ESS resources.',
+  autoStart: true,
+  requires: [ICommandPalette],
+  activate: (app: JupyterFrontEnd, palette: ICommandPalette) => {
+    console.log('JupyterLab extension ESS is activated!');
 
-  const widget = new Widget();
-  widget.id = 'ESS-widget';
-  widget.title.icon = myIcon;
-  widget.title.closable = true;
-	widget.node.innerHTML = `
+    const widget = new Widget();
+    widget.id = 'ESS-widget';
+    widget.title.icon = myIcon;
+    widget.title.closable = true;
+    widget.node.innerHTML = `
 	<div style="padding: 20px;">
 		<p>To find the lock files for environments on VISA, please visit:</p>
 		<a href="https://git.esss.dk/visa/visa-pixi-env/" target="_blank" style="color: #0099DC; text-decoration: underline;">
@@ -77,9 +77,9 @@ activate: (app: JupyterFrontEnd, palette: ICommandPalette) => {
 	</div>
 	`;
 
-  // Add the widget to the left area
-  app.shell.add(widget, 'left');
-}
+    // Add the widget to the left area
+    app.shell.add(widget, 'left');
+  }
 };
 
 export default plugin;
