@@ -62,7 +62,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   requires: [ICommandPalette],
   activate: (app: JupyterFrontEnd, palette: ICommandPalette) => {
-    console.log('JupyterLab extension jupyterlab-ess is activated!')
+    console.log('JupyterLab extension jupyterlab-ess is activated!');
 
     const widget = new Widget();
     widget.id = 'ESS-widget';
